@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoF Patterns</title>
+    <style>
+      :root {
+        --bg: #11201a;
+        --bg-2: #173227;
+        --panel: rgba(28, 44, 39, 0.9);
+        --panel-border: rgba(255, 255, 255, 0.08);
+        --text: #edf4ee;
+        --muted: #afc7b8;
+        --accent: #8ecf99;
+        --accent-gold: #e9c77b;
+        --shadow: rgba(0, 0, 0, 0.25);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(
+          circle at top,
+          var(--bg-2) 0%,
+          var(--bg) 60%
+        );
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+      }
+
+      .hero {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--panel-border);
+        border-radius: 22px;
+        padding: 2.1rem;
+        box-shadow: 0 24px 60px var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(142, 207, 153, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(142, 207, 153, 0.25);
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 1rem 0 0.8rem;
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 1.08;
+      }
+
+      .subtitle {
+        margin: 0;
+        max-width: 60ch;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 18px;
+        padding: 1.35rem 1.2rem;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.28rem 0.62rem;
+        border-radius: 999px;
+        background: rgba(233, 199, 123, 0.1);
+        color: var(--accent-gold);
+        border: 1px solid rgba(233, 199, 123, 0.2);
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
+
+      h2 {
+        margin: 0 0 0.55rem;
+        font-size: 1.35rem;
+      }
+
+      .card p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .card a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 2rem;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="eyebrow">GoF Patterns</div>
+        <h1>Design Patterns, one small demo at a time.</h1>
+        <p class="subtitle">
+          A growing collection of small JavaScript, HTML, and CSS examples
+          showing classic Gang of Four patterns in a clear, visual, and
+          beginner-friendly way.
+        </p>
+      </header>
+
+      <main class="grid">
+        <article class="card">
+          <div class="badge">01</div>
+          <h2>Observer</h2>
+          <p>
+            One shared state, many dependent widgets, and a clean update flow
+            without direct widget-to-widget coupling.
+          </p>
+          <a href="./01-observer/">Open demo →</a>
+        </article>
+
+        <article class="card">
+          <div class="badge">02</div>
+          <h2>Strategy</h2>
+          <p>
+            A placeholder pattern folder ready for the next example in the
+            learning series.
+          </p>
+          <a href="./02-strategy/">Open placeholder →</a>
+        </article>
+
+        <article class="card">
+          <div class="badge">Next</div>
+          <h2>Grow the library</h2>
+          <p>
+            Add more pattern folders in numbered order as your examples evolve
+            and expand.
+          </p>
+          <a href="../README.md">Repo overview →</a>
+        </article>
+      </main>
+
+      <div class="footer">
+        Built for learning, exploration, and GitHub Pages publishing.
+      </div>
+    </div>
+  </body>
+</html>
