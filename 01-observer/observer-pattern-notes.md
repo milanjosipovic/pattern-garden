@@ -1,8 +1,8 @@
 # Observer Pattern Notes
 
-A gentle learning set for understanding the Observer pattern through a terrarium example, technical refreshers, and real-world intuition.
+A quiet companion for understanding the Observer pattern through a terrarium example, a technical refresher, and everyday intuition.
 
-## 📚 The three companion notes
+## The companion notes
 
 1. [terrarium-qa-notes.md](./terrarium-qa-notes.md)  
    A conceptual, narrative explanation of the pattern and the questions that shaped our understanding.

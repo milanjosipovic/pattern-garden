@@ -1,8 +1,8 @@
-# Observer Pattern Notes
+# Observer Pattern Demo Guide
 
-A gentle learning set for understanding the Observer pattern through a terrarium example, technical refreshers, and real-world intuition.
+A practical companion for exploring the Observer pattern through the terrarium demo, its code structure, and the surrounding learning notes.
 
-## 📚 The three companion notes
+## The companion notes
 
 1. [terrarium-qa-notes.md](./terrarium-qa-notes.md)  
    A conceptual, narrative explanation of the pattern and the questions that shaped our understanding.
