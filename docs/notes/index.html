@@ -32,7 +32,7 @@
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="../index.html">Home</a>
           <a href="../index.html#patterns">Patterns</a>
-          <a href="./index.html" class="active">Notes</a>
+          <a class="active" href="./index.html">Notes</a>
         </nav>
       </header>
 
@@ -40,7 +40,17 @@
         <aside class="sidebar" aria-label="Markdown files">
           <div class="sidebar-header">
             <p class="eyebrow">Garden notes</p>
-            <h1>Browse the archive</h1>
+            <div class="sidebar-title-row">
+              <h1>Browse the archive</h1>
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle archive list"
+              >
+                <span class="sidebar-toggle-icon" aria-hidden="true">▾</span>
+              </button>
+            </div>
           </div>
           <div id="notes-tree" class="notes-tree"></div>
         </aside>
@@ -57,20 +67,82 @@
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
     <script src="./notes.js"></script>
     <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.getElementById('site-nav');
+      const navToggle = document.querySelector(".nav-toggle");
+      const nav = document.getElementById("site-nav");
+      const sidebarToggle = document.querySelector(".sidebar-toggle");
+      const sidebar = document.querySelector(".sidebar");
+
+      if (sidebarToggle && sidebar) {
+        sidebarToggle.addEventListener("click", () => {
+          const isOpen = sidebar.classList.toggle("open");
+          sidebarToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+      }
+
+      function setMobileNavState(isOpen) {
+        if (nav) {
+          nav.classList.toggle("open", isOpen);
+        }
+        if (navToggle) {
+          navToggle.setAttribute("aria-expanded", String(isOpen));
+        }
+        document.body.classList.toggle("menu-open", isOpen);
+
+        const main = document.querySelector("main");
+        const footer = document.querySelector(".footer");
+        if (main) {
+          main.style.opacity = isOpen ? "0.22" : "";
+          main.style.filter = isOpen ? "blur(0.5px)" : "";
+          main.style.pointerEvents = isOpen ? "none" : "";
+        }
+        if (footer) {
+          footer.style.opacity = isOpen ? "0.22" : "";
+          footer.style.filter = isOpen ? "blur(0.5px)" : "";
+          footer.style.pointerEvents = isOpen ? "none" : "";
+        }
+      }
 
       if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-          const isOpen = nav.classList.toggle('open');
-          navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.addEventListener("click", (event) => {
+          event.stopPropagation();
+          setMobileNavState(!nav.classList.contains("open"));
         });
 
-        nav.querySelectorAll('a').forEach((link) => {
-          link.addEventListener('click', () => {
-            nav.classList.remove('open');
-            navToggle.setAttribute('aria-expanded', 'false');
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            setMobileNavState(false);
           });
+        });
+
+        document.addEventListener(
+          "click",
+          (event) => {
+            const target = event.target;
+            if (!(target instanceof Node)) return;
+
+            if (target.closest(".note-link")) {
+              setMobileNavState(false);
+              return;
+            }
+
+            const clickedInsideNav = nav.contains(target);
+            const clickedToggle = navToggle.contains(target);
+
+            if (
+              nav.classList.contains("open") &&
+              !clickedInsideNav &&
+              !clickedToggle
+            ) {
+              setMobileNavState(false);
+            }
+          },
+          true,
+        );
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && nav.classList.contains("open")) {
+            setMobileNavState(false);
+          }
         });
       }
     </script>
