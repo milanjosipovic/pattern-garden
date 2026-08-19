@@ -3,6 +3,7 @@ import json
 
 repo_root = Path(__file__).resolve().parents[1]
 notes_dir = repo_root / "docs" / "notes"
+raw_github_base = "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main"
 
 
 def humanize(name: str) -> str:
@@ -50,7 +51,8 @@ def relative_path_from_notes(path: Path) -> str:
 
     if parts[0] == "docs":
         return (Path("..") / Path(*parts[1:])).as_posix()
-    return (Path("../..") / Path(*parts)).as_posix()
+
+    return f"{raw_github_base}/{rel_to_repo.as_posix()}"
 
 
 def collect_markdown_files() -> list[Path]:
