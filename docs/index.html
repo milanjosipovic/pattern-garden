@@ -930,7 +930,11 @@
               </p>
 
               <div class="cta-row">
-                <a class="button primary" href="./01-observer/">
+                <!-- Primary CTA Button -->
+                <a
+                  class="button primary"
+                  href="./patterns/01-observer/index.html"
+                >
                   Explore the first pattern
                 </a>
                 <a class="button secondary" href="./notes/index.html">
@@ -1062,14 +1066,18 @@
                 <p>
                   Shared state, many listeners, and a clean flow of updates.
                 </p>
-                <a class="entry-link" href="./01-observer/">Open</a>
+                <a class="entry-link" href="./patterns/01-observer/index.html"
+                  >Open</a
+                >
               </article>
 
               <article class="entry">
                 <div class="entry-number">02</div>
                 <h3>Strategy</h3>
                 <p>A place for the next pattern to take root and grow.</p>
-                <a class="entry-link" href="./02-strategy/">Open</a>
+                <a class="entry-link" href="./patterns/02-strategy/index.html"
+                  >Open</a
+                >
               </article>
 
               <article class="entry">
@@ -1205,22 +1213,11 @@
 
         document.addEventListener("click", (event) => {
           const target = event.target;
-          const clickedInsideNav =
-            target instanceof Node && nav.contains(target);
-          const clickedToggle =
-            target instanceof Node && navToggle.contains(target);
-
           if (
             nav.classList.contains("open") &&
-            !clickedInsideNav &&
-            !clickedToggle
+            !nav.contains(target) &&
+            !navToggle.contains(target)
           ) {
-            closeMobileNav();
-          }
-        });
-
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape" && nav.classList.contains("open")) {
             closeMobileNav();
           }
         });
