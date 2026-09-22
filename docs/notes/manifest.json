@@ -3,62 +3,58 @@
     {
       "group": "Project",
       "label": "Observer Everyday Life",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/01-observer/observer-everyday-life.md"
+      "path": "./observer-everyday-life.md"
     },
-    {
-      "group": "Project",
-      "label": "Observer Pattern Notes",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/01-observer/observer-pattern-notes.md"
-    },
+    
     {
       "group": "Project",
       "label": "Observer Pattern Summary",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/01-observer/observer-pattern-summary.md"
+      "path": "./observer-pattern-summary.md"
     },
     {
       "group": "Project",
       "label": "Terrarium Js Css Refresher",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/01-observer/terrarium-js-css-refresher.md"
+      "path": "./terrarium-js-css-refresher.md"
     },
     {
       "group": "Project",
       "label": "Terrarium Qa Notes",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/01-observer/terrarium-qa-notes.md"
+      "path": "./terrarium-qa-notes.md"
     },
     {
       "group": "Project",
       "label": "Project README",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/README.md"
+      "path": "../../README.md"
     },
     {
       "group": "Docs / Observer",
       "label": "Observer Pattern Demo Guide",
-      "path": "../01-observer/observer-pattern-demo-guide.md"
+      "path": "./observer-pattern-demo-guide.md"
     },
     {
       "group": "Notebooks",
       "label": "Index",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/notebooks/index.md"
+      "path": "../../notebooks/index.md"
     },
     {
       "group": "Notebooks / Pattern Journal",
       "label": "Index",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/notebooks/pattern-journal/index.md"
+      "path": "../../notebooks/pattern-journal/index.md"
     },
     {
       "group": "Notebooks / Pattern Journal",
       "label": "Observer Field Journal Template",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/notebooks/pattern-journal/observer-field-journal-template.md"
+      "path": "../../notebooks/pattern-journal/observer-field-journal-template.md"
     },
     {
       "group": "Notebooks / Pattern Journal / Park",
       "label": "Observer Park Entry",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/notebooks/pattern-journal/park/observer-park-entry.md"
+      "path": "../../notebooks/pattern-journal/park/observer-park-entry.md"
     },
     {
       "group": "Notebooks / Pattern Journal / Town Square",
       "label": "Observer Town Square Entry",
-      "path": "https://raw.githubusercontent.com/milanjosipovic/GoF-Patterns/main/notebooks/pattern-journal/town-square/observer-town-square-entry.md"
+      "path": "../../notebooks/pattern-journal/town-square/observer-town-square-entry.md"
     }
   ]
 }

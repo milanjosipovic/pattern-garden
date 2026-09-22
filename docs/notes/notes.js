@@ -146,14 +146,16 @@ function rewriteRelativeLinks(html) {
 }
 
 async function loadMarkdown(path) {
-  currentSourcePath = path;
+  // Resolve path relative to the current location (docs/notes/index.html)
+  const absoluteUrl = new URL(path, window.location.href).href;
+  currentSourcePath = absoluteUrl;
 
   try {
     readerContent.innerHTML = '<p class="loading">Loading notes…</p>';
-    const response = await fetch(path, { cache: "no-store" });
+    const response = await fetch(absoluteUrl, { cache: "no-store" });
 
     if (!response.ok) {
-      throw new Error(`Could not fetch ${path}`);
+      throw new Error(`Could not fetch ${absoluteUrl}`);
     }
 
     const markdown = await response.text();

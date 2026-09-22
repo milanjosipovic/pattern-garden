@@ -27,18 +27,17 @@ This project is meant for:
 
 ## Repository map
 
-```text
-pattern-garden/
+gof-patterns/
 ├── README.md
 ├── .github/
-├── 01-observer/
-├── notebooks/
 ├── docs/
 │   ├── index.html
-│   ├── 01-observer/
-│   └── 02-strategy/
-└── ...
-```
+│   ├── notes/
+│   └── patterns/
+│       ├── 01-observer/
+│       └── 02-strategy/
+├── notebooks/
+└── scripts/
 
 The structure supports both local learning and GitHub Pages publishing without forcing the repository into a rigid app layout.
 
@@ -48,8 +47,8 @@ The structure supports both local learning and GitHub Pages publishing without f
 
 | # | Pattern | Source Folder | Live Demo | Status |
 |---|---------|---------------|-----------|--------|
-| 01 | Observer | [01-observer](./01-observer/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/index.html) | Built |
-| 02 | Strategy | [docs/02-strategy](./docs/02-strategy/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/02-strategy/index.html) | Planned |
+| 01 | Observer | [docs/patterns/01-observer](./docs/patterns/01-observer/) | [View Demo](https://milanjosipovic.github.io/gof-patterns/patterns/01-observer/index.html) | Built |
+| 02 | Strategy | [docs/patterns/02-strategy](./docs/patterns/02-strategy/) | [View Demo](https://milanjosipovic.github.io/gof-patterns/patterns/02-strategy/index.html) | Planned |
 | 03 | Factory | Planned | — | Future |
 | 04 | Decorator | Planned | — | Future |
 | 05 | Singleton / Module | Planned | — | Future |
@@ -73,12 +72,8 @@ The educational focus stays on clarity over abstraction. There is no need to tur
 
 This project also includes a reflective layer:
 
-- [01-observer/observer-pattern-notes.md](./01-observer/observer-pattern-notes.md)
-- [01-observer/terrarium-qa-notes.md](./01-observer/terrarium-qa-notes.md)
-- [01-observer/terrarium-js-css-refresher.md](./01-observer/terrarium-js-css-refresher.md)
-- [01-observer/observer-everyday-life.md](./01-observer/observer-everyday-life.md)
+- [docs/notes/](./docs/notes/)
 - [notebooks/index.md](./notebooks/index.md)
-- [notebooks/pattern-journal/index.md](./notebooks/pattern-journal/index.md)
 
 These notes help connect code patterns to lived experience, architecture, and observation.
 
@@ -90,16 +85,12 @@ The demos are plain static HTML/CSS/JS examples, so the easiest local workflow i
 
 Example:
 
-```bash
-cd /path/to/pattern-garden
+cd /path/to/gof-patterns
 python3 -m http.server 8000
-```
 
 Then open:
 
-```text
 http://localhost:8000/docs/index.html
-```
 
 ---
 
@@ -108,10 +99,10 @@ http://localhost:8000/docs/index.html
 The project is published as a static site under GitHub Pages.
 
 Central Hub:
-- [milanjosipovic.github.io/pattern-garden](https://milanjosipovic.github.io/pattern-garden/docs/index.html)
+- [milanjosipovic.github.io/gof-patterns](https://milanjosipovic.github.io/gof-patterns/index.html)
 
 Individual Examples:
-- [Observer Pattern Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/index.html)
+- [Observer Pattern Demo](https://milanjosipovic.github.io/gof-patterns/patterns/01-observer/index.html)
 
 ---
 
