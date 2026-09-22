@@ -48,8 +48,8 @@ The structure supports both local learning and GitHub Pages publishing without f
 
 | # | Pattern | Source Folder | Live Demo | Status |
 |---|---------|---------------|-----------|--------|
-| 01 | Observer | [01-observer](./01-observer/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/) | Built |
-| 02 | Strategy | [docs/02-strategy](./docs/02-strategy/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/02-strategy/) | Planned |
+| 01 | Observer | [01-observer](./01-observer/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/index.html) | Built |
+| 02 | Strategy | [docs/02-strategy](./docs/02-strategy/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/02-strategy/index.html) | Planned |
 | 03 | Factory | Planned | — | Future |
 | 04 | Decorator | Planned | — | Future |
 | 05 | Singleton / Module | Planned | — | Future |
