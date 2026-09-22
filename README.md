@@ -27,7 +27,8 @@ This project is meant for:
 
 ## Repository map
 
-GoF-Patterns/
+```text
+pattern-garden/
 ├── README.md
 ├── .github/
 ├── 01-observer/
@@ -37,6 +38,7 @@ GoF-Patterns/
 │   ├── 01-observer/
 │   └── 02-strategy/
 └── ...
+```
 
 The structure supports both local learning and GitHub Pages publishing without forcing the repository into a rigid app layout.
 
@@ -88,12 +90,16 @@ The demos are plain static HTML/CSS/JS examples, so the easiest local workflow i
 
 Example:
 
+```bash
 cd /path/to/pattern-garden
 python3 -m http.server 8000
+```
 
 Then open:
 
+```text
 http://localhost:8000/docs/index.html
+```
 
 ---
 
