@@ -1,8 +1,15 @@
-# GoF Patterns
+# 🌿 Pattern Garden
 
-A living library of design patterns, written as small, readable examples and thoughtful notes rather than a heavy production codebase.
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Vanilla JS](https://img.shields.io/badge/Code-Vanilla_JS_ES6-yellow.svg)
+![Web Components](https://img.shields.io/badge/Standards-Web_Components-ff69b4.svg)
+![IndieWeb](https://img.shields.io/badge/IndieWeb-POSSE-informational.svg)
+
+> A living library of design patterns, written as small, readable examples and thoughtful notes rather than a heavy production codebase.
 
 This repository is a digital garden: a place to explore pattern ideas, revisit them slowly, and connect software design with architectural thinking, observation, and everyday experience.
+
+---
 
 ## Why this project exists
 
@@ -20,7 +27,6 @@ This project is meant for:
 
 ## Repository map
 
-```text
 GoF-Patterns/
 ├── README.md
 ├── .github/
@@ -31,21 +37,20 @@ GoF-Patterns/
 │   ├── 01-observer/
 │   └── 02-strategy/
 └── ...
-```
 
 The structure supports both local learning and GitHub Pages publishing without forcing the repository into a rigid app layout.
 
 ---
 
-## Included pattern work
+## Included pattern work & Live Demos
 
-| # | Pattern | Folder | Status |
-|---|---------|--------|--------|
-| 01 | Observer | [01-observer](./01-observer/) | Built |
-| 02 | Strategy | [docs/02-strategy](./docs/02-strategy/) | Planned |
-| 03 | Factory | Planned | Future |
-| 04 | Decorator | Planned | Future |
-| 05 | Singleton / Module | Planned | Future |
+| # | Pattern | Source Folder | Live Demo | Status |
+|---|---------|---------------|-----------|--------|
+| 01 | Observer | [01-observer](./01-observer/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/) | Built |
+| 02 | Strategy | [docs/02-strategy](./docs/02-strategy/) | [View Demo](https://milanjosipovic.github.io/pattern-garden/docs/02-strategy/) | Planned |
+| 03 | Factory | Planned | — | Future |
+| 04 | Decorator | Planned | — | Future |
+| 05 | Singleton / Module | Planned | — | Future |
 
 ---
 
@@ -83,34 +88,24 @@ The demos are plain static HTML/CSS/JS examples, so the easiest local workflow i
 
 Example:
 
-```bash
-cd /path/to/GoF-Patterns
+cd /path/to/pattern-garden
 python3 -m http.server 8000
-```
 
 Then open:
 
-```text
 http://localhost:8000/docs/index.html
-```
 
 ---
 
 ## GitHub Pages
 
-The project is designed to publish as a static site from the `docs/` folder.
+The project is published as a static site under GitHub Pages.
 
-Typical structure:
+Central Hub:
+- [milanjosipovic.github.io/pattern-garden](https://milanjosipovic.github.io/pattern-garden/docs/index.html)
 
-```text
-https://your-username.github.io/GoF-Patterns/
-```
-
-and for individual examples:
-
-```text
-https://your-username.github.io/GoF-Patterns/01-observer/
-```
+Individual Examples:
+- [Observer Pattern Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/)
 
 The site is intentionally scalable: more examples can be added over time without needing a rewrite of the repo structure.
 
@@ -133,9 +128,9 @@ The aim is not complexity for its own sake. The aim is clarity, curiosity, and a
 
 ## Sources
 
-- Gamma, Helm, Johnson, Vlissides — Design Patterns: Elements of Reusable Object-Oriented Software
-- Christopher Alexander — The Timeless Way of Building
-- Christopher Alexander — A Pattern Language
+- Gamma, Helm, Johnson, Vlissides — *Design Patterns: Elements of Reusable Object-Oriented Software*
+- Christopher Alexander — *The Timeless Way of Building*
+- Christopher Alexander — *A Pattern Language*
 
 ---
 
@@ -144,3 +139,15 @@ The aim is not complexity for its own sake. The aim is clarity, curiosity, and a
 This repository is not a framework app and it does not try to be one.
 
 It is intentionally more like a digital garden than a product site: a small, well-tended collection of ideas, experiments, and examples that keep growing in their own time.
+
+---
+
+## 💚 Mindset & Community Note
+
+> *Building in public is part of a journey toward sustainable learning and mental health awareness. Supported by advocacy for OCD communities ([IOCDF](https://iocdf.org/)).*
+
+---
+
+## 📄 License
+
+This repository is open-source software licensed under the [MIT License](LICENSE).
