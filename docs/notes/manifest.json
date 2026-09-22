@@ -21,11 +21,7 @@
       "label": "Terrarium Qa Notes",
       "path": "./terrarium-qa-notes.md"
     },
-    {
-      "group": "Project",
-      "label": "Project README",
-      "path": "../../README.md"
-    },
+    
     {
       "group": "Docs / Observer",
       "label": "Observer Pattern Demo Guide",
