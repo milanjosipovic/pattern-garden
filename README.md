@@ -111,9 +111,7 @@ Central Hub:
 - [milanjosipovic.github.io/pattern-garden](https://milanjosipovic.github.io/pattern-garden/docs/index.html)
 
 Individual Examples:
-- [Observer Pattern Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/)
-
-The site is intentionally scalable: more examples can be added over time without needing a rewrite of the repo structure.
+- [Observer Pattern Demo](https://milanjosipovic.github.io/pattern-garden/docs/01-observer/index.html)
 
 ---
 
